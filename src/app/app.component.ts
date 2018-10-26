@@ -6,6 +6,7 @@ import { Component, ViewChild, TemplateRef } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  theme = 'light';
   isCollapsed = false;
   triggerTemplate = null;
   @ViewChild('trigger') customTrigger: TemplateRef<void>;

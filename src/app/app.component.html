@@ -1,9 +1,9 @@
 <nz-layout class="layout">
-  <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed" [nzTrigger]="triggerTemplate" [nzCollapsedWidth]="80" [nzBreakpoint]="'lg'">
+  <nz-sider style="background: #fff;" nzCollapsible [(nzCollapsed)]="isCollapsed" [nzTrigger]="triggerTemplate" [nzCollapsedWidth]="80" [nzBreakpoint]="'lg'">
     <div class="logo">
       <img src="assets/images/logo.png" alt="">
     </div>
-    <ul nz-menu [nzTheme]="'dark'" [nzMode]="isCollapsed?'vertical':'inline'"[nzInlineCollapsed]="isCollapsed">
+    <ul nz-menu [nzTheme]="theme" [nzMode]="isCollapsed?'vertical':'inline'"[nzInlineCollapsed]="isCollapsed">
       <li nz-submenu>
         <span title><i nz-icon type="user"></i><span class="nav-text">User</span></span>
         <ul>
