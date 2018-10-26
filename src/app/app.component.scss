@@ -1,0 +1,33 @@
+:host ::ng-deep .trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color .3s;
+}
+
+:host ::ng-deep .trigger:hover {
+    color: #1890ff;
+}
+
+:host ::ng-deep .logo {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 50%;
+}
+
+:host ::ng-deep .logo img {
+    width: 60px;
+    height: 60px;
+}
+
+nz-layout {
+    width: 100%;
+    height: 100%;
+}
