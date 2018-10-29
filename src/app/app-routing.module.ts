@@ -25,6 +25,10 @@ const routes: Routes = [
       {
         path: 'pagethree',
         component: PagethreeComponent
+      },
+      {
+        path: 'router-anim',
+        loadChildren: './router-anim/router-anim.module#RouterAnimModule'
       }
     ]
   },
