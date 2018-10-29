@@ -1,3 +1,30 @@
-<p>
-  complex-order works!
-</p>
+<h2>Filter/Stagger</h2>
+
+<form>
+  <div style="margin-bottom: 16px;width:200px;">
+    <nz-input-group nzAddOnBefore="filter">
+      <input type="text" nz-input #criteria (input)="updateCriteria(criteria.value)" placeholder="Search Heroes">
+    </nz-input-group>
+  </div>
+</form>
+<!-- 
+<nz-timeline class="heroes" [@filterAnimation]="heroTotal">
+  <nz-timeline-item *ngFor="let hero of heroes">
+    <li class="hero">
+      <div class="inner">
+        <span class="badge">{{ hero.id }}</span>
+        <span>{{ hero.name }}</span>
+      </div>
+    </li>
+  </nz-timeline-item>
+</nz-timeline> -->
+
+
+<ul class="heroes" [@filterAnimation]="heroTotal">
+  <li *ngFor="let hero of heroes" class="hero">
+    <div class="inner">
+      <span class="badge">{{ hero.id }}</span>
+      <span>{{ hero.name }}</span>
+    </div>
+  </li>
+</ul>
