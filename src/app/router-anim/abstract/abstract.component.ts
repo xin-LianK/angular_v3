@@ -1,5 +1,5 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
-import { trigger, style, state, transition, animate } from '@angular/animations';
+import { trigger, style, state, transition, animate, keyframes } from '@angular/animations';
 
 @Component({
   selector: 'app-abstract',
@@ -17,11 +17,19 @@ import { trigger, style, state, transition, animate } from '@angular/animations'
         opacity: 0.5,
         backgroundColor: 'green'
       })),
-      transition('open=>closed', [
-        animate('1s')
-      ]),
-      transition('closed=>open', [
-        animate('0.5s')
+      // transition('open=>closed', [
+      //   animate('1s')
+      // ]),
+      // transition('closed=>open', [
+      //   animate('0.5s')
+      // ]),
+      transition('*=>*', [
+        animate('1s', keyframes([
+          style({ opacity: 0.1, offset: 0.1 }),
+          style({ opacity: 0.6, offset: 0.2 }),
+          style({ opacity: 1, offset: 0.5 }),
+          style({ opacity: 0.2, offset: 0.7 })
+        ]))
       ])
     ])
   ]
