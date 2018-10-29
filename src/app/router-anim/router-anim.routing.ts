@@ -1,3 +1,5 @@
+import { AnimRouteComponent } from './anim-route/anim-route.component';
+import { MultiplexingComponent } from './multiplexing/multiplexing.component';
 import { ComplexOrderComponent } from './complex-order/complex-order.component';
 import { TransferComponent } from './transfer/transfer.component';
 import { AbstractComponent } from './abstract/abstract.component';
@@ -14,7 +16,18 @@ const routes: Routes = [
   },
   {
     path: 'complex-order',
-    component: ComplexOrderComponent
+    component: ComplexOrderComponent,
+    data: { animation: 'FilterPage' }
+  },
+  {
+    path: 'multiplexing',
+    component: MultiplexingComponent,
+    data: { animation: 'multiplexingPage' }
+  },
+  {
+    path: 'anim-route',
+    component: AnimRouteComponent,
+    data: { animation: 'animRoutePage' }
   }
 ];
 
