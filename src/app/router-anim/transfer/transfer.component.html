@@ -1,0 +1,9 @@
+<div @myInsertOrDelete *ngIf="isShown" class="insert-remove-container">
+  <p>The box is inserted</p>
+</div>
+
+<div [@openClose]="isShown?true:false" *ngIf="isShown" class="insert-remove-container">
+  <p>The boxTwo is inserted</p>
+</div>
+
+<button nz-button nzType="primary" (click)="toggle()">Change</button>
