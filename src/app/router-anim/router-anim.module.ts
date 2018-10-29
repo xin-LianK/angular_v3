@@ -5,6 +5,7 @@ import { RouterAnimComponent } from './router-anim.component';
 import { AbstractComponent } from './abstract/abstract.component';
 import { RouterAnimRoutes } from './router-anim.routing';
 import { TransferComponent } from './transfer/transfer.component';
+import { ComplexOrderComponent } from './complex-order/complex-order.component';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { TransferComponent } from './transfer/transfer.component';
   declarations: [
     RouterAnimComponent,
     AbstractComponent,
-    TransferComponent
+    TransferComponent,
+    ComplexOrderComponent
   ]
 })
 export class RouterAnimModule { }
