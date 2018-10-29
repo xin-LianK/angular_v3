@@ -1,5 +1,6 @@
 <div [@.disabled]="false">
-  <div [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container">
+  <div [@openClose]="isOpen ? 'open' : 'closed'" (@openClose.start)="startAnim($event)" (@openClose.done)="endAnim($event)"
+    class="open-close-container">
     <p>The box is now {{ isOpen ? 'Open' : 'Closed' }}!</p>
   </div>
 </div>
