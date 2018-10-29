@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 import { trigger, style, state, transition, animate } from '@angular/animations';
 
 @Component({
@@ -27,6 +27,9 @@ import { trigger, style, state, transition, animate } from '@angular/animations'
   ]
 })
 export class AbstractComponent implements OnInit {
+  // 禁用所有动画
+  @HostBinding('@.disabled')
+  public animationsDisabled = false;
   isOpen = true;
   constructor() { }
 
