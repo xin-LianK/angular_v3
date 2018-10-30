@@ -19,24 +19,27 @@ import { AppNolayoutComponent } from './app.nolayout.component';
 registerLocaleData(zh);
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AppNolayoutComponent,
-    BaseComponent,
-    PageoneComponent,
-    PagetwoComponent,
-    PagethreeComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    FormsModule,
-    HttpClientModule,
-    NgZorroAntdModule,
-    SharedModule
-  ],
-  providers: [{ provide: NZ_I18N, useValue: zh_CN }],
-  bootstrap: [AppNolayoutComponent]
+   declarations: [
+      AppComponent,
+      AppNolayoutComponent,
+      BaseComponent,
+      PageoneComponent,
+      PagetwoComponent,
+      PagethreeComponent,
+   ],
+   imports: [
+      BrowserModule,
+      AppRoutingModule,
+      BrowserAnimationsModule,
+      FormsModule,
+      HttpClientModule,
+      NgZorroAntdModule,
+      SharedModule
+   ],
+   providers: [
+   ],
+   bootstrap: [
+      AppNolayoutComponent
+   ]
 })
 export class AppModule { }

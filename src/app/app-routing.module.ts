@@ -1,3 +1,4 @@
+import { ComposeMessageComponent } from './shared/components/compose-message/compose-message.component';
 import { AppComponent } from './app.component';
 import { PagethreeComponent } from './pagethree/pagethree.component';
 import { PagetwoComponent } from './pagetwo/pagetwo.component';
@@ -30,8 +31,13 @@ const routes: Routes = [
       {
         path: 'router-anim',
         loadChildren: './router-anim/router-anim.module#RouterAnimModule'
-      }
+      },
     ]
+  },
+  {
+    path: 'compose',
+    component: ComposeMessageComponent,
+    outlet: 'popup'
   },
   {
     path: '**',
