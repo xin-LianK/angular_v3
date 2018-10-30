@@ -1,0 +1,17 @@
+.app-tips {
+    padding: 1rem;
+    position: fixed;
+    width: auto;
+    max-width: 20rem;
+    line-height: 1.6rem;
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+    border-radius: .2rem !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1050;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+}

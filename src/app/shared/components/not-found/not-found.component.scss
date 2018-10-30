@@ -1,0 +1,81 @@
+:host {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #f0f0f0;
+}
+
+.box {
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 16px;
+    background: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all .2s ease-in-out;
+}
+
+.box:hover {
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+    border-color: #eee;
+}
+
+.error404-body-con-title {
+    text-align: center;
+    font-size: 240px;
+    font-weight: 700;
+    color: #2d8cf0;
+    height: 260px;
+    line-height: 260px;
+    margin-top: 40px;
+}
+
+@keyframes mymove {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(-50deg);
+    }
+}
+
+.error404-body-con-title i {
+    font-size: 180px;
+    animation: mymove 1s alternate infinite;
+}
+
+.error404-body-con-message {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 12px;
+    color: #dddde2;
+}
+
+.error404-btn-con {
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+.error404-btn-con button {
+    width: 200px;
+    padding: 6px 15px 7px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.error404-btn-con button:first-child {
+    color: #fff;
+    background-color: #2d8cf0;
+    border-color: #2d8cf0;
+}

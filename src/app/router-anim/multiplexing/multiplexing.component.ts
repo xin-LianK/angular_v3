@@ -1,3 +1,4 @@
+import { TipService } from './../../shared/services/tip.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MultiplexingComponent implements OnInit {
 
-  constructor() { }
+  constructor(private tipService: TipService) { }
 
   ngOnInit() {
   }
-
+  showTip() {
+    this.tipService.set({ content: 'This is a tips!', timeout: 2000 });
+  }
 }
